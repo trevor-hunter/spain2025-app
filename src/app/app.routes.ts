@@ -1,14 +1,17 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { MapComponent } from './map/map.component';
-import { ItineraryComponent } from './itinerary/itinerary.component';
-import { GalleryComponent } from './gallery/gallery.component';
-import { AboutComponent } from './about/about.component';
+import { HomeComponent } from './components/home/home.component';
+import { MapComponent } from './components/map/map.component';
+import { ItineraryComponent } from './components/itinerary/itinerary.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
+import { AboutComponent } from './components/about/about.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 export const routes: Routes = [
-    { path: 'home-component', component: HomeComponent },
-    { path: 'map-component', component: MapComponent },
-    { path: 'itinerary-component', component: ItineraryComponent },
-    { path: 'gallery-component', component: GalleryComponent },
-    { path: 'about-component', component: AboutComponent }
+    { path: 'home', component: HomeComponent },
+    { path: 'map', component: MapComponent },
+    { path: 'itinerary', component: ItineraryComponent },
+    { path: 'gallery', component: GalleryComponent },
+    { path: 'about', component: AboutComponent },
+    { path: '',   redirectTo: '/home', pathMatch: 'full' },
+    { path: '**', component: PageNotFoundComponent }
 ];
