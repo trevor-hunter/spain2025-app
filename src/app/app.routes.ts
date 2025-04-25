@@ -1,3 +1,17 @@
 import { Routes } from '@angular/router';
+import { HomeComponent } from './components/home/home.component';
+import { MapComponent } from './components/map/map.component';
+import { ItineraryComponent } from './components/itinerary/itinerary.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
+import { AboutComponent } from './components/about/about.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
-export const routes: Routes = [];
+export const routes: Routes = [
+    { path: 'home', component: HomeComponent },
+    { path: 'map', component: MapComponent },
+    { path: 'itinerary', component: ItineraryComponent },
+    { path: 'gallery', component: GalleryComponent },
+    { path: 'about', component: AboutComponent },
+    { path: '',   redirectTo: '/home', pathMatch: 'full' },
+    { path: '**', component: PageNotFoundComponent }
+];
