@@ -1,18 +1,24 @@
 <main>
-  <h1>Spain App</h1>
-  <nav>
-    <ul>
-      <li><a routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a></li>
-      <li><a routerLink="/map" routerLinkActive="active" ariaCurrentWhenActive="page">Map</a></li>
-      <li><a routerLink="/itinerary" routerLinkActive="active" ariaCurrentWhenActive="page">Itinerary</a></li>
-      <li><a routerLink="/gallery" routerLinkActive="active" ariaCurrentWhenActive="page">Gallery</a></li>
-      <li><a routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">About</a></li>
-    </ul>
-  </nav>
-
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+  <div class="navbar bg-base-100 shadow-sm border-2 border-base-300">
+    <div class="navbar-start ml-4">
+      <h1 class="text-xl font-bold">
+        A Trip to Spain
+      </h1>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1">
+        <li><a routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a></li>
+        <li><a routerLink="/map" routerLinkActive="active" ariaCurrentWhenActive="page">Map</a></li>
+        <li><a routerLink="/itinerary" routerLinkActive="active" ariaCurrentWhenActive="page">Itinerary</a></li>
+        <li><a routerLink="/gallery" routerLinkActive="active" ariaCurrentWhenActive="page">Gallery</a></li>
+      </ul>
+    </div>
+    <div class="navbar-end mr-4">
+      <ul class="menu menu-horizontal px-1">
+        <li><a routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">About</a></li>
+      </ul>
+    </div>
+  </div>
 </main>
 
-<router-outlet />
+<router-outlet/>
