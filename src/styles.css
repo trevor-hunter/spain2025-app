@@ -1,3 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 @import "tailwindcss";
-@plugin "daisyui";
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark, cupcake, retro, dracula;
+}
+
+.xl-card {
+  @apply card card-xl w-auto h-auto shadow-xl mt-4 border-2 border-base-300;
+}
+
+.xl-card-body {
+  @apply card-body bg-base-100 border-base-300 text-base-content;
+}
