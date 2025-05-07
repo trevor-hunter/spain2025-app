@@ -1,0 +1,9 @@
+<div class="bg-secondary-content rounded-box p-4 space-y-4">
+  <div class="gallery-img-holder carousel carousel-center bg-primary-content rounded-box space-x-4 p-4">
+    <div class="carousel-item" *ngFor="let img of imgSrc1">
+      <img src={{imgSrc1PF+img.src}} alt={{img.alt}} class="gallery-img rounded-box" (click)="selectImage($event, img)"/>
+    </div>
+  </div>
+
+  <div class="justify-self-center"><img class="selected-img rounded-box" src={{imgSrc1PF+selectedImage.src}} alt={{selectedImage.alt}}/></div>
+</div>
