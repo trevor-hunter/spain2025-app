@@ -5,7 +5,7 @@
 }
 
 .xl-card {
-  @apply card card-xl w-auto h-auto shadow-xl mt-4 border-2 border-base-300;
+  @apply card card-xl w-auto h-auto shadow-xl mt-4 border-2 border-base-300 rounded-none;
 }
 
 .xl-card-body {
