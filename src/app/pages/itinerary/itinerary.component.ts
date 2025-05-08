@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { TimelineComponent } from '../../components/timeline/timeline.component';
 
 @Component({
   selector: 'app-itinerary',
-  imports: [],
+  imports: [TimelineComponent],
   templateUrl: './itinerary.component.html',
   styleUrl: './itinerary.component.css'
 })
