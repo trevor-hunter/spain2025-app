@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-export default async function handler(req, res) {
+export default async function handler(req: any, res: any) {
   const tag = req.query.tag
   const { CLOUD_NAME, API_KEY, API_SECRET } = process.env
 
@@ -19,7 +19,7 @@ export default async function handler(req, res) {
     )
 
     res.status(200).json(response.data)
-  } catch (err) {
+  } catch (err: any) {
     console.error(err.message)
     res.status(500).json({ error: 'Failed to fetch images' })
   }
